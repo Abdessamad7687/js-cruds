@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS&localstorage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<style>
+    .form-label {
+        font-family: 'Bootstrap-icons' !important;
+        color: skyblue;
+    }
+</style>
+
+<body>
+
+    <div class="container p-4 col-md-8">
+
+        <h2 class="text-center my-3">Javascript CRUDS</h2>
+
+
+        <form class="form">
+
+            <!--First name -->
+
+            <div class="form-group col-md-4 mx-auto">
+
+                <label for="form-label" class="form-label">&#xF4D0</label>
+                <input type="text" name="" id="fname" class="form-control" placeholder="first name">
+            </div>
+
+
+            <!--Last name -->
+
+            <div class="form-group col-md-4 mx-auto">
+
+                <label for="form-label" class="form-label">&#xF4E1</label>
+                <input type="text" name="" id="lname" class="form-control" placeholder="Last name">
+
+            </div>
+
+            <!-- Email Address -->
+
+            <div class="form-group col-md-4 mx-auto">
+
+                <label for="form-label" class="form-label"> &#xF32F </label>
+                <input type="email" name="" id="email" class="form-control" placeholder="Email Address">
+
+            </div>
+
+
+            <!-- Phone number -->
+
+            <div class="form-group col-md-4 mx-auto">
+
+                <label for="form-label" class="form-label">&#xF5C1</label>
+                <input type="number" name="" id="phone" class="form-control" placeholder="Phone number ">
+
+            </div>
+
+
+            <!-- Submit button -->
+
+            <div class="col-md-4 mx-auto mt-3 form-group">
+                <button class="btn btn-info w-100" id="submit">Create </button>
+            </div>
+
+
+        </form>
+
+    </div>
+
+
+    <div class="container my-5">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="table">
+                <!-- Data will be displayed here from localstorage -->
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
